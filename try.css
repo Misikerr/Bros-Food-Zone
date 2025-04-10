@@ -294,3 +294,53 @@ section {
   color: black;
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 1024px) {
+  .navmenu {
+    display: none; /* Hide navigation menu on tablet and smaller screens */
+  }
+  #menu-icon {
+    display: block; /* Show the menu icon */
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 products per row */
+  }
+
+  .main-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-text p {
+    font-size: 1.2rem;
+  }
+
+  .main-btn {
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navmenu {
+    display: none; /* Hide navigation menu on smaller screens */
+  }
+  #menu-icon {
+    display: block; /* Show the menu icon */
+  }
+
+  .products {
+    grid-template-columns: 1fr 1fr; /* Show 1 product per row */
+  }
+
+  .main-text h1 {
+    font-size: 2rem;
+  }
+
+  .main-text p {
+    font-size: 1rem;
+  }
+
+  .main-btn {
+    padding: 6px 12px;
+  }
+}
